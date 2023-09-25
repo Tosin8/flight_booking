@@ -11,8 +11,15 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-      title: Text('My Tickets'),
-    ));
+      appBar: AppBar(
+        title: Text('My Tickets'),
+      ),
+      body: Center(
+        child: Text('My Body'),
+      ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home')
+      ]),
+    );
   }
 }
