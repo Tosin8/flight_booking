@@ -18,7 +18,10 @@ class _BottomBarState extends State<BottomBar> {
         child: Text('My Body'),
       ),
       bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
+          elevation: 10,
+          showSelectedLabels: false,
+          type: BottomNavigationBarType
+              .fixed, // to make the navigation bar to show at more than three items.
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),

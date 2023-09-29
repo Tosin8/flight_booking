@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'screens/home.dart';
 import 'widgets/bottom_nav.dart';
 
 void main() {
