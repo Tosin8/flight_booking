@@ -19,7 +19,10 @@ class _BottomBarState extends State<BottomBar> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           elevation: 10,
-          showSelectedLabels: false,
+          // showSelectedLabels: false,
+          showUnselectedLabels: false,
+          selectedItemColor: Colors.blueAccent,
+          unselectedItemColor: Colors.amberAccent,
           type: BottomNavigationBarType
               .fixed, // to make the navigation bar to show at more than three items.
           items: const [
