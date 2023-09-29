@@ -17,10 +17,15 @@ class _BottomBarState extends State<BottomBar> {
       body: const Center(
         child: Text('My Body'),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.airplane_ticket), label: 'Airplane'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          ]),
     );
   }
 }
