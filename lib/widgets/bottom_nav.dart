@@ -9,21 +9,27 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
+  static final List<Widget> _widgetOptions = <Widget>[
+    const Text('Home'),
+    const Text('Search'),
+    const Text('Tickets'),
+    const Text('Profile'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('My Tickets'),
       ),
-      body: const Center(
-        child: Text('My Body'),
+      body: Center(
+        child: _widgetOptions[0],
       ),
       bottomNavigationBar: BottomNavigationBar(
           elevation: 10,
           // showSelectedLabels: false,
           showUnselectedLabels: false,
           selectedItemColor: Colors.blueAccent,
-          unselectedItemColor: Colors.amberAccent,
+          unselectedItemColor: Color(0xff526480),
           type: BottomNavigationBarType
               .fixed, // to make the navigation bar to show at more than three items.
           items: const [
