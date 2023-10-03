@@ -59,6 +59,7 @@ flutter:
      - assets/logo-black-form.png
      - assets/airplane_loading.json 
      - assets/bkg.jpg
+     - assets/logo-white.png
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
