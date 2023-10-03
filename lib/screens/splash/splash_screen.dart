@@ -12,7 +12,21 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: ListView(
-      children: [],
+      children: [
+        Stack(
+          children: [
+            Container(
+                width: 190.0,
+                height: 190.0,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                          'assets/bkg.jpg',
+                        ))))
+          ],
+        )
+      ],
     ));
   }
 }
