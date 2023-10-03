@@ -1,3 +1,4 @@
+import 'package:flight_booking/screens/forms/login/login.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/constants.dart';
@@ -43,7 +44,10 @@ class _SplashBodyState extends State<SplashBody> {
         bottom: 30,
         left: 50,
         child: GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => LoginForm()));
+          },
           child: Container(
               height: 56,
               width: 314,
