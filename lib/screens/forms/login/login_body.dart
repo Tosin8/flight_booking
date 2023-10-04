@@ -37,15 +37,26 @@ class _LoginBodyState extends State<LoginBody> {
                           fontSize: 15,
                           fontWeight: FontWeight.w700),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     Container(
-                      height: 50,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                          color: Colors.white10,
-                          borderRadius: BorderRadius.circular(5),
-                          border: Border.all(color: kPrimaryColor)),
-                    )
+                        height: 50,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: Colors.white10,
+                            borderRadius: BorderRadius.circular(5),
+                            border: Border.all(color: kPrimaryColor)),
+                        child: const TextField(
+                          keyboardType: TextInputType.emailAddress,
+                          textInputAction: TextInputAction.next,
+                          style: TextStyle(color: Colors.black),
+                          decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding:
+                                  EdgeInsets.only(top: 14.0, left: 10),
+                              suffixIcon:
+                                  Icon(Icons.email, color: Colors.black),
+                              hintText: 'Enter your email'),
+                        ))
                   ],
                 ),
               ),
