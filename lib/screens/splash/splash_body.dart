@@ -19,7 +19,7 @@ class _SplashBodyState extends State<SplashBody> {
               image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage(
-                    'assets/bkg.jpg',
+                    'assets/splash/bkg.jpg',
                   )))),
       Positioned(
           right: 20, top: 30, child: Image.asset('assets/logo-white.png')),

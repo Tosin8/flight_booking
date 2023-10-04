@@ -31,7 +31,7 @@ class _LoginBodyState extends State<LoginBody> {
                 padding: const EdgeInsets.only(top: 120),
                 child: Column(
                   children: [
-                    Image.asset("assets/logo-black-form.png"),
+                    Image.asset("assets/icons/logo-black-form.png"),
                     const Text(
                       'Kindly provide your login details below',
                       style: TextStyle(
@@ -59,7 +59,7 @@ class _LoginBodyState extends State<LoginBody> {
                                   Icon(Icons.email, color: Colors.black),
                               hintText: 'Enter your email'),
                         )),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Container(
                         height: 50,
                         width: double.infinity,
@@ -79,13 +79,48 @@ class _LoginBodyState extends State<LoginBody> {
                               suffixIcon: Icon(Icons.lock, color: Colors.black),
                               hintText: 'Enter your password'),
                         )),
-                    SizedBox(height: 50),
-                    btn(),
+                    const SizedBox(height: 50),
+                    const btnLogin(),
+                    const SizedBox(height: 20),
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('-'),
+                        SizedBox(width: 10),
+                        Text(
+                          'Or Sign In with ',
+                          style: TextStyle(
+                              color: kSecondaryColor,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(width: 10),
+                        Text('-'),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    SocialCard(),
                   ],
                 ),
               ),
             ]),
           ))
     ]);
+  }
+}
+
+class SocialCard extends StatelessWidget {
+  const SocialCard({
+    super.key,
+    required this.icon,
+    required this.press,
+  });
+
+  final String icon;
+  final VoidCallback press;
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [GestureDetector(onTap: press, child: Image.asset(icon))],
+    );
   }
 }

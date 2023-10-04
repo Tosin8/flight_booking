@@ -54,12 +54,14 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/airplane_loading.json
-     - assets/logo-black.png
-     - assets/logo-black-form.png
-     - assets/airplane_loading.json 
-     - assets/bkg.jpg
-     - assets/logo-white.png
+     - assets/icons/airplane_loading.json
+     - assets/icons/logo-black.png
+     - assets/icons/logo-black-form.png
+     - assets/icons/airplane_loading.json 
+     - assets/splash/bkg.jpg
+     - assets/icons/logo-white.png
+     - assets/icons/apple.png
+     - assets/icons/gmail.png
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
