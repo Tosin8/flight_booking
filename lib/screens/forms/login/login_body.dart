@@ -22,7 +22,7 @@ class _LoginBodyState extends State<LoginBody> {
           child: SingleChildScrollView(
             physics: const AlwaysScrollableScrollPhysics(),
             padding:
-                const EdgeInsets.symmetric(horizontal: 40.0, vertical: 40.0),
+                const EdgeInsets.symmetric(horizontal: 60.0, vertical: 40.0),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Padding(
@@ -37,6 +37,15 @@ class _LoginBodyState extends State<LoginBody> {
                           fontSize: 15,
                           fontWeight: FontWeight.w700),
                     ),
+                    SizedBox(height: 10),
+                    Container(
+                      height: 50,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                          color: Colors.white10,
+                          borderRadius: BorderRadius.circular(5),
+                          border: Border.all(color: kPrimaryColor)),
+                    )
                   ],
                 ),
               ),
