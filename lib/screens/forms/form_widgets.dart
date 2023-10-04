@@ -31,3 +31,21 @@ class btnLogin extends StatelessWidget {
     );
   }
 }
+
+class SocialCard extends StatelessWidget {
+  const SocialCard({
+    super.key,
+    required this.icon,
+    required this.press,
+  });
+
+  final String icon;
+  final VoidCallback press;
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: press,
+      child: Image.asset(icon),
+    );
+  }
+}

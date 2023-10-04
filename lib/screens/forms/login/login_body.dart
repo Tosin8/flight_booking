@@ -39,7 +39,7 @@ class _LoginBodyState extends State<LoginBody> {
                           fontSize: 15,
                           fontWeight: FontWeight.w700),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 30),
                     Container(
                         height: 50,
                         width: double.infinity,
@@ -87,6 +87,8 @@ class _LoginBodyState extends State<LoginBody> {
                       children: [
                         Text('-'),
                         SizedBox(width: 10),
+
+                        // Socail Card instructions
                         Text(
                           'Or Sign In with ',
                           style: TextStyle(
@@ -98,29 +100,43 @@ class _LoginBodyState extends State<LoginBody> {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    SocialCard(),
+
+                    // Social Card Row
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SocialCard(
+                          icon: 'assets/icons/apple.png',
+                          press: () {},
+                        ),
+                        const SizedBox(width: 30),
+                        SocialCard(
+                          icon: 'assets/icons/gmail.png',
+                          press: () {},
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 30),
+
+                    const Text(
+                      'Create Account',
+                      style: TextStyle(
+                        color: kPrimaryColor,
+                        fontSize: 16,
+                        //decoration: TextDecoration.underline
+                      ),
+                    ),
+                    const Text('Reset Password',
+                        style: TextStyle(
+                          color: kPrimaryColor,
+                          fontSize: 16,
+                          //  decoration: TextDecoration.underline
+                        ))
                   ],
                 ),
               ),
             ]),
           ))
     ]);
-  }
-}
-
-class SocialCard extends StatelessWidget {
-  const SocialCard({
-    super.key,
-    required this.icon,
-    required this.press,
-  });
-
-  final String icon;
-  final VoidCallback press;
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [GestureDetector(onTap: press, child: Image.asset(icon))],
-    );
   }
 }
