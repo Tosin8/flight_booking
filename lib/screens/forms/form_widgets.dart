@@ -60,6 +60,26 @@ class SignInForm extends StatefulWidget {
 class _SignInFormState extends State<SignInForm> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Form(
+      child: Column(
+        children: [
+          TextFormField(
+            decoration: InputDecoration(
+                labelText: 'Email',
+                hintText: 'Enter your email',
+                floatingLabelBehavior: FloatingLabelBehavior.always,
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 45, vertical: 20),
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(28),
+                    borderSide: BorderSide(color: kPrimaryColor),
+                    gapPadding: 10),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(28),
+                    borderSide: BorderSide(color: kSecondaryColor))),
+          )
+        ],
+      ),
+    );
   }
 }
