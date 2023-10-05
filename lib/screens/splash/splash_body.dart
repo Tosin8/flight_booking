@@ -22,7 +22,9 @@ class _SplashBodyState extends State<SplashBody> {
                     'assets/splash/bkg.jpg',
                   )))),
       Positioned(
-          right: 20, top: 30, child: Image.asset('assets/logo-white.png')),
+          right: 20,
+          top: 30,
+          child: Image.asset('assets/icons/logo-white.png')),
       const Positioned(
         bottom: 180,
         left: 20,

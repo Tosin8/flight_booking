@@ -47,7 +47,7 @@ class _LoginBodyState extends State<LoginBody> {
                             color: Colors.white10,
                             borderRadius: BorderRadius.circular(5),
                             border: Border.all(color: kPrimaryColor)),
-                        child: const TextField(
+                        child: TextField(
                           keyboardType: TextInputType.emailAddress,
                           textInputAction: TextInputAction.next,
                           style: TextStyle(color: Colors.black),
@@ -57,7 +57,9 @@ class _LoginBodyState extends State<LoginBody> {
                                   EdgeInsets.only(top: 14.0, left: 10),
                               suffixIcon:
                                   Icon(Icons.email, color: Colors.black),
-                              hintText: 'Enter your email'),
+                              hintText: 'Enter your email',
+                              hintStyle: TextStyle(
+                                  color: Colors.black.withOpacity(0.1))),
                         )),
                     const SizedBox(height: 20),
                     Container(
@@ -67,7 +69,7 @@ class _LoginBodyState extends State<LoginBody> {
                             color: Colors.white10,
                             borderRadius: BorderRadius.circular(5),
                             border: Border.all(color: kPrimaryColor)),
-                        child: const TextField(
+                        child: TextField(
                           obscureText: true,
                           keyboardType: TextInputType.visiblePassword,
                           textInputAction: TextInputAction.done,
@@ -77,7 +79,9 @@ class _LoginBodyState extends State<LoginBody> {
                               contentPadding:
                                   EdgeInsets.only(top: 14.0, left: 10),
                               suffixIcon: Icon(Icons.lock, color: Colors.black),
-                              hintText: 'Enter your password'),
+                              hintText: 'Enter your password',
+                              hintStyle: TextStyle(
+                                  color: Colors.black.withOpacity(0.2))),
                         )),
                     const SizedBox(height: 50),
                     const btnLogin(),
@@ -122,14 +126,15 @@ class _LoginBodyState extends State<LoginBody> {
                       'Create Account',
                       style: TextStyle(
                         color: kPrimaryColor,
-                        fontSize: 16,
+                        fontSize: 14,
                         //decoration: TextDecoration.underline
                       ),
                     ),
+                    SizedBox(height: 10),
                     const Text('Reset Password',
                         style: TextStyle(
                           color: kPrimaryColor,
-                          fontSize: 16,
+                          fontSize: 14,
                           //  decoration: TextDecoration.underline
                         ))
                   ],
