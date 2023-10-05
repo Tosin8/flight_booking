@@ -40,49 +40,7 @@ class _LoginBodyState extends State<LoginBody> {
                           fontWeight: FontWeight.w700),
                     ),
                     const SizedBox(height: 30),
-                    Container(
-                        height: 50,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                            color: Colors.white10,
-                            borderRadius: BorderRadius.circular(5),
-                            border: Border.all(color: kPrimaryColor)),
-                        child: TextField(
-                          keyboardType: TextInputType.emailAddress,
-                          textInputAction: TextInputAction.next,
-                          style: TextStyle(color: Colors.black),
-                          decoration: InputDecoration(
-                              border: InputBorder.none,
-                              contentPadding:
-                                  EdgeInsets.only(top: 14.0, left: 10),
-                              suffixIcon:
-                                  Icon(Icons.email, color: Colors.black),
-                              hintText: 'Enter your email',
-                              hintStyle: TextStyle(
-                                  color: Colors.black.withOpacity(0.1))),
-                        )),
-                    const SizedBox(height: 20),
-                    Container(
-                        height: 50,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                            color: Colors.white10,
-                            borderRadius: BorderRadius.circular(5),
-                            border: Border.all(color: kPrimaryColor)),
-                        child: TextField(
-                          obscureText: true,
-                          keyboardType: TextInputType.visiblePassword,
-                          textInputAction: TextInputAction.done,
-                          style: TextStyle(color: Colors.black),
-                          decoration: InputDecoration(
-                              border: InputBorder.none,
-                              contentPadding:
-                                  EdgeInsets.only(top: 14.0, left: 10),
-                              suffixIcon: Icon(Icons.lock, color: Colors.black),
-                              hintText: 'Enter your password',
-                              hintStyle: TextStyle(
-                                  color: Colors.black.withOpacity(0.2))),
-                        )),
+                    const SignInForm(),
                     const SizedBox(height: 50),
                     const btnLogin(),
                     const SizedBox(height: 20),
@@ -130,7 +88,7 @@ class _LoginBodyState extends State<LoginBody> {
                         //decoration: TextDecoration.underline
                       ),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     const Text('Reset Password',
                         style: TextStyle(
                           color: kPrimaryColor,

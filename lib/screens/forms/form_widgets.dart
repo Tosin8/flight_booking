@@ -49,3 +49,17 @@ class SocialCard extends StatelessWidget {
     );
   }
 }
+
+class SignInForm extends StatefulWidget {
+  const SignInForm({super.key});
+
+  @override
+  State<SignInForm> createState() => _SignInFormState();
+}
+
+class _SignInFormState extends State<SignInForm> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
