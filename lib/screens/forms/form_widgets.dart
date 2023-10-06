@@ -69,7 +69,7 @@ class _SignInFormState extends State<SignInForm> {
                 hintText: 'Enter your email',
                 floatingLabelBehavior: FloatingLabelBehavior.always,
                 contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 45, vertical: 20),
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                 enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(28),
                     borderSide: BorderSide(color: kPrimaryColor),
@@ -77,7 +77,23 @@ class _SignInFormState extends State<SignInForm> {
                 focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(28),
                     borderSide: BorderSide(color: kSecondaryColor))),
-          )
+          ),
+          SizedBox(height: 15),
+          TextFormField(
+            decoration: InputDecoration(
+                labelText: 'Password',
+                hintText: 'Enter your password',
+                floatingLabelBehavior: FloatingLabelBehavior.always,
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(28),
+                    borderSide: BorderSide(color: kPrimaryColor),
+                    gapPadding: 10),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(28),
+                    borderSide: BorderSide(color: kSecondaryColor))),
+          ),
         ],
       ),
     );
