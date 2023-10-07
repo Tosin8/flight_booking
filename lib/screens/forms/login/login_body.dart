@@ -2,6 +2,8 @@ import 'package:flight_booking/widgets/constants.dart';
 import 'package:flutter/material.dart';
 
 import '../form_widgets.dart';
+import '../resetpass/reset.dart';
+import '../signup/signup.dart';
 
 class LoginBody extends StatefulWidget {
   const LoginBody({super.key});
@@ -81,7 +83,10 @@ class _LoginBodyState extends State<LoginBody> {
                     const SizedBox(height: 30),
 
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => SignUpForm()));
+                      },
                       child: const Text(
                         'Create Account',
                         style: TextStyle(
@@ -93,7 +98,10 @@ class _LoginBodyState extends State<LoginBody> {
                     ),
                     const SizedBox(height: 10),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ResetForm()));
+                      },
                       child: const Text('Reset Password',
                           style: TextStyle(
                             color: kPrimaryColor,
