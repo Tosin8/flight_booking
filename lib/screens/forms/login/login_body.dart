@@ -80,21 +80,27 @@ class _LoginBodyState extends State<LoginBody> {
                     ),
                     const SizedBox(height: 30),
 
-                    const Text(
-                      'Create Account',
-                      style: TextStyle(
-                        color: kPrimaryColor,
-                        fontSize: 14,
-                        //decoration: TextDecoration.underline
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    const Text('Reset Password',
+                    GestureDetector(
+                      onTap: () {},
+                      child: const Text(
+                        'Create Account',
                         style: TextStyle(
                           color: kPrimaryColor,
                           fontSize: 14,
-                          //  decoration: TextDecoration.underline
-                        ))
+                          //decoration: TextDecoration.underline
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    GestureDetector(
+                      onTap: () {},
+                      child: const Text('Reset Password',
+                          style: TextStyle(
+                            color: kPrimaryColor,
+                            fontSize: 14,
+                            //  decoration: TextDecoration.underline
+                          )),
+                    )
                   ],
                 ),
               ),
