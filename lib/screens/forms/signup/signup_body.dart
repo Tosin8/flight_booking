@@ -56,7 +56,7 @@ class _SignUpBodyState extends State<SignUpBody> {
 
                               // Socail Card instructions
                               Text(
-                                'Or Sign In with ',
+                                'Or Sign Up with ',
                                 style: TextStyle(
                                     color: kSecondaryColor,
                                     fontWeight: FontWeight.bold),
@@ -90,7 +90,7 @@ class _SignUpBodyState extends State<SignUpBody> {
                                   builder: (context) => SignUpForm()));
                             },
                             child: const Text(
-                              'Create Account',
+                              'Log In',
                               style: TextStyle(
                                 color: kPrimaryColor,
                                 fontSize: 14,
