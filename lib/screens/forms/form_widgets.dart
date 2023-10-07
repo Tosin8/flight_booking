@@ -100,3 +100,31 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 }
+
+class btnSignUp extends StatelessWidget {
+  const btnSignUp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {},
+      child: Container(
+          height: 56,
+          width: 314,
+          decoration: ShapeDecoration(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            color: kPrimaryColor,
+          ),
+          child: const Center(
+            child: Text(
+              'Sign Up',
+              style: TextStyle(
+                  color: kSecondaryColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700),
+            ),
+          )),
+    );
+  }
+}
