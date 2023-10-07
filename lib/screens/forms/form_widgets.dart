@@ -80,6 +80,7 @@ class _SignInFormState extends State<SignInForm> {
           ),
           SizedBox(height: 15),
           TextFormField(
+            obscureText: true,
             decoration: InputDecoration(
                 labelText: 'Password',
                 hintText: 'Enter your password',
