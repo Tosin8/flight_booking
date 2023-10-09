@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/constants.dart';
+import '../widgets/constants.dart';
 
 class btnLogin extends StatelessWidget {
   const btnLogin({

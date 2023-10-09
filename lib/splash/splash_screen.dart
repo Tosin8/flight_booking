@@ -1,4 +1,4 @@
-import 'package:flight_booking/screens/splash/splash_body.dart';
+import 'package:flight_booking/splash/splash_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

@@ -1,7 +1,7 @@
-import 'package:flight_booking/screens/forms/login/login.dart';
+import 'package:flight_booking/forms/login/login.dart';
 import 'package:flutter/material.dart';
 
-import '../../widgets/constants.dart';
+import '../widgets/constants.dart';
 
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
