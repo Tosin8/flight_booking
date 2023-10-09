@@ -1,4 +1,4 @@
 # flight_booking
 
-A new Flutter project.
+A flight booking app called ' airlift ' 
 
