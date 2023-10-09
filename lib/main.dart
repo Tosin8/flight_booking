@@ -10,11 +10,11 @@ void main() {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-  }
 
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
-  runApp(const MyApp());
+    // WidgetsFlutterBinding.ensureInitialized();
+    // await Firebase.initializeApp();
+    runApp(const MyApp());
+  }
 }
 
 class MyApp extends StatelessWidget {
