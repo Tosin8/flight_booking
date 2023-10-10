@@ -35,6 +35,7 @@ dependencies:
   firebase_messaging: ^14.6.8
   firebase_storage: ^11.2.7
   fluentui_icons: ^1.0.0
+  fluentui_system_icons: ^1.1.218
   flutter:
     sdk: flutter
 
@@ -54,15 +55,14 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/icons/airplane_loading.json
-     - assets/icons/logo-black.png
-     - assets/icons/logo-black-form.png
-     - assets/icons/airplane_loading.json 
-     - assets/splash/bkg.jpg
-     - assets/icons/logo-white.png
-     - assets/icons/apple.png
-     - assets/icons/gmail.png
-
+    - assets/icons/airplane_loading.json
+    - assets/icons/logo-black.png
+    - assets/icons/logo-black-form.png
+    - assets/icons/airplane_loading.json
+    - assets/splash/bkg.jpg
+    - assets/icons/logo-white.png
+    - assets/icons/apple.png
+    - assets/icons/gmail.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
