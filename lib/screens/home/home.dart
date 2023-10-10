@@ -10,6 +10,15 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        body: ListView(
+      children: [
+        Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              children: [const Gap(40)],
+            ))
+      ],
+    ));
   }
 }
